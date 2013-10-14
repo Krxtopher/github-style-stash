@@ -1,0 +1,1547 @@
+.stash-theme .file-content .source-view
+{
+  font-size:15px;
+  line-height:1.7;
+  overflow-x:hidden;
+  
+    background-color: white;
+    border-radius: 3px;
+    border: 3px solid #EEE;
+    box-shadow: inset 0 0 0 1px #CECECE;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    width: 912px;
+    padding: 30px;
+    margin: 2em auto;
+    
+    color:#333333;
+}
+
+.file-content>:first-child
+{
+  margin-top:0!important;
+}
+
+.file-content>:last-child
+{
+  margin-bottom:0!important;
+}
+
+blockquote,dl,ol,p,pre,table,ul {
+  border: 0;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.file-content a.absent
+{
+  color:#c00;
+}
+
+.file-content a.anchor
+{
+  display:block;
+  padding-left:30px;
+  margin-left:-30px;
+  cursor:pointer;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0
+}
+
+/*h4,h5,h6{ font-weight: bold; }*/
+
+.octicon{
+  font:normal normal 16px sans-serif;
+  width: 1em;
+  height: 1em;
+  line-height:1;
+  display:inline-block;
+  text-decoration:none;
+  -webkit-font-smoothing:antialiased
+}
+
+.octicon-link {
+  background: url("data:image/svg+xml;utf8,<?xml version='1.0' standalone='no'?> <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'> <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 832'> <metadata>Copyright (C) 2013 by GitHub</metadata> <!-- scale(0.01565557729941) --> <path transform='' d='M768 64h-192s-254 0-256 256c0 22 3 43 8 64h137c-11-19-18-41-18-64 0-128 128-128 128-128h192s128 0 128 128-128 128-128 128 0 64-64 128h64s256 0 256-256-256-256-256-256z m-72 192h-137c11 19 18 41 18 64 0 128-128 128-128 128h-192s-128 0-128-128 128-128 128-128-4-65 66-128h-66s-256 0-256 256 256 256 256 256h192s256 0 256-256c0-22-4-44-8-64z'/> </svg>"); 
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.octicon-link:before{
+  content:'\a0';
+}
+
+.file-content h1,.file-content h2,.file-content h3,.file-content h4,.file-content h5,.file-content h6{
+  margin:1em 0 15px;
+  padding:0;
+  font-weight:bold;
+  line-height:1.7;
+  cursor:text;
+  position:relative
+}
+
+.file-content h1 .octicon-link,.file-content h2 .octicon-link,.file-content h3 .octicon-link,.file-content h4 .octicon-link,.file-content h5 .octicon-link,.file-content h6 .octicon-link{
+  display:none;
+  color:#000
+}
+
+.file-content h1:hover a.anchor,.file-content h2:hover a.anchor,.file-content h3:hover a.anchor,.file-content h4:hover a.anchor,.file-content h5:hover a.anchor,.file-content h6:hover a.anchor{
+  text-decoration:none;
+  line-height:1;
+  padding-left:0;
+  margin-left:-22px;
+  top:15%
+}
+
+.file-content h1:hover a.anchor .octicon-link,.file-content h2:hover a.anchor .octicon-link,.file-content h3:hover a.anchor .octicon-link,.file-content h4:hover a.anchor .octicon-link,.file-content h5:hover a.anchor .octicon-link,.file-content h6:hover a.anchor .octicon-link{
+  display:inline-block
+}
+
+.file-content h1 tt,.file-content h1 code,.file-content h2 tt,.file-content h2 code,.file-content h3 tt,.file-content h3 code,.file-content h4 tt,.file-content h4 code,.file-content h5 tt,.file-content h5 code,.file-content h6 tt,.file-content h6 code{
+  font-size:inherit
+}
+
+.file-content h1{
+  font-size:2.5em;
+  border-bottom:1px solid #ddd
+}
+
+.file-content h2{
+  font-size:2em;
+  border-bottom:1px solid #eee
+}
+
+.file-content h3{
+  font-size:1.5em
+}
+
+.file-content h4{
+  font-size:1.2em
+}
+
+.file-content h5{
+  font-size:1em
+}
+
+.file-content h6{
+  color:#777;
+  font-size:1em
+}
+
+.file-content p,.file-content blockquote,.file-content ul,.file-content ol,.file-content dl,.file-content table,.file-content pre{
+  margin:15px 0
+}
+
+.file-content h1 tt,.file-content h1 code,.file-content h2 tt,.file-content h2 code,.file-content h3 tt,.file-content h3 code,.file-content h4 tt,.file-content h4 code,.file-content h5 tt,.file-content h5 code,.file-content h6 tt,.file-content h6 code
+{
+  font-size:inherit;
+}
+
+
+.file-content hr
+{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC);
+  background-repeat: repeat-x;
+  /*background:transparent url(http://overblown.net/files/markdown/dirty-shade.png) repeat-x 0 0;*/
+  background-color: transparent;
+  background-position: 0;
+  border:0 none;
+  color:#ccc;
+  height:4px;
+  margin:15px 0;
+  padding:0;
+}
+
+.file-content li p.first
+{
+  display:inline-block;
+}
+
+.file-content ul,.file-content ol
+{
+  padding-left:30px;
+}
+
+.file-content ul.no-list,.file-content ol.no-list
+{
+  list-style-type:none;
+  padding:0;
+}
+
+.file-content ul ul,.file-content ul ol,.file-content ol ol,.file-content ol ul
+{
+  margin-bottom:0;
+  margin-top:0;
+}
+
+.file-content dl
+{
+  padding:0;
+}
+
+.file-content dl dt
+{
+  font-size:14px;
+  font-style:italic;
+  font-weight:700;
+  margin-top:15px;
+  padding:0;
+}
+
+.file-content dl dd
+{
+  margin-bottom:15px;
+  padding:0 15px;
+}
+
+.file-content blockquote
+{
+  border-left:4px solid #DDD;
+  color:#777;
+  padding:0 15px;
+}
+
+.file-content blockquote>:first-child
+{
+  margin-top:0;
+}
+
+.file-content blockquote>:last-child
+{
+  margin-bottom:0;
+}
+
+.file-content table
+{
+  display:block;
+  overflow:auto;
+  width:100%;
+}
+
+.file-content table th
+{
+  font-weight:700;
+}
+
+.file-content table th,.file-content table td
+{
+  border:1px solid #ddd;
+  padding:6px 13px;
+}
+
+.file-content table tr
+{
+  background-color:#fff;
+  border-top:1px solid #ccc;
+}
+
+.file-content table tr:nth-child(2n)
+{
+  background-color:#f8f8f8;
+}
+
+.file-content img
+{
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  max-width:100%;
+}
+
+.file-content span.frame
+{
+  display:block;
+  overflow:hidden;
+}
+
+.file-content span.frame>span
+{
+  border:1px solid #ddd;
+  display:block;
+  float:left;
+  margin:13px 0 0;
+  overflow:hidden;
+  padding:7px;
+  width:auto;
+}
+
+.file-content span.frame span img
+{
+  display:block;
+  float:left;
+}
+
+.file-content span.frame span span
+{
+  clear:both;
+  color:#333;
+  display:block;
+  padding:5px 0 0;
+}
+
+.file-content span.align-center
+{
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+.file-content span.align-center>span
+{
+  display:block;
+  margin:13px auto 0;
+  overflow:hidden;
+  text-align:center;
+}
+
+.file-content span.align-center span img
+{
+  margin:0 auto;
+  text-align:center;
+}
+
+.file-content span.align-right
+{
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+.file-content span.align-right>span
+{
+  display:block;
+  margin:13px 0 0;
+  overflow:hidden;
+  text-align:right;
+}
+
+.file-content span.align-right span img
+{
+  margin:0;
+  text-align:right;
+}
+
+.file-content span.float-left
+{
+  display:block;
+  float:left;
+  margin-right:13px;
+  overflow:hidden;
+}
+
+.file-content span.float-left span
+{
+  margin:13px 0 0;
+}
+
+.file-content span.float-right
+{
+  display:block;
+  float:right;
+  margin-left:13px;
+  overflow:hidden;
+}
+
+.file-content span.float-right>span
+{
+  display:block;
+  margin:13px auto 0;
+  overflow:hidden;
+  text-align:right;
+}
+
+.file-content code,.file-content tt
+{
+  background-color:#f8f8f8;
+  border:1px solid #ddd;
+  border-radius:3px;
+  margin:0 2px;
+  padding:0 5px;
+}
+
+.file-content code
+{
+  white-space:nowrap;
+}
+
+
+code,pre{
+  font-family:Consolas, "Liberation Mono", Courier, monospace;
+  font-size:12px
+}
+
+.file-content pre>code
+{
+  background:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+  white-space:pre;
+}
+
+.file-content .highlight pre,.file-content pre
+{
+  background-color:#f8f8f8;
+  border:1px solid #ddd;
+  font-size:13px;
+  line-height:19px;
+  overflow:auto;
+  padding:6px 10px;
+  border-radius:3px
+}
+
+.file-content pre code,.file-content pre tt
+{
+  background-color:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+.file-content .task-list{
+  list-style-type:none;
+  padding-left:10px
+}
+
+.task-list-item{
+  padding-left:20px
+}
+
+.task-list-item label{
+  font-weight:normal
+}
+
+.task-list-item.enabled label{
+  cursor:pointer
+}
+
+.task-list-item+.task-list-item{
+  margin-top:5px
+}
+
+.task-list-item-checkbox{
+  float:left;
+  margin-left:-20px;
+  margin-top:7px
+}
+
+
+.highlight{
+  background:#ffffff
+}
+
+.highlight .c{
+  color:#999988;
+  font-style:italic
+}
+
+.highlight .err{
+  color:#a61717;
+  background-color:#e3d2d2
+}
+
+.highlight .k{
+  font-weight:bold
+}
+
+.highlight .o{
+  font-weight:bold
+}
+
+.highlight .cm{
+  color:#999988;
+  font-style:italic
+}
+
+.highlight .cp{
+  color:#999999;
+  font-weight:bold
+}
+
+.highlight .c1{
+  color:#999988;
+  font-style:italic
+}
+
+.highlight .cs{
+  color:#999999;
+  font-weight:bold;
+  font-style:italic
+}
+
+.highlight .gd{
+  color:#000000;
+  background-color:#ffdddd
+}
+
+.highlight .gd .x{
+  color:#000000;
+  background-color:#ffaaaa
+}
+
+.highlight .ge{
+  font-style:italic
+}
+
+.highlight .gr{
+  color:#aa0000
+}
+
+.highlight .gh{
+  color:#999999
+}
+
+.highlight .gi{
+  color:#000000;
+  background-color:#ddffdd
+}
+
+.highlight .gi .x{
+  color:#000000;
+  background-color:#aaffaa
+}
+
+.highlight .go{
+  color:#888888
+}
+
+.highlight .gp{
+  color:#555555
+}
+
+.highlight .gs{
+  font-weight:bold
+}
+
+.highlight .gu{
+  color:#800080;
+  font-weight:bold
+}
+
+.highlight .gt{
+  color:#aa0000
+}
+
+.highlight .kc{
+  font-weight:bold
+}
+
+.highlight .kd{
+  font-weight:bold
+}
+
+.highlight .kn{
+  font-weight:bold
+}
+
+.highlight .kp{
+  font-weight:bold
+}
+
+.highlight .kr{
+  font-weight:bold
+}
+
+.highlight .kt{
+  color:#445588;
+  font-weight:bold
+}
+
+.highlight .m{
+  color:#009999
+}
+
+.highlight .s{
+  color:#d14
+}
+
+.highlight .n{
+  color:#333333
+}
+
+.highlight .na{
+  color:#008080
+}
+
+.highlight .nb{
+  color:#0086B3
+}
+
+.highlight .nc{
+  color:#445588;
+  font-weight:bold
+}
+
+.highlight .no{
+  color:#008080
+}
+
+.highlight .ni{
+  color:#800080
+}
+
+.highlight .ne{
+  color:#990000;
+  font-weight:bold
+}
+
+.highlight .nf{
+  color:#990000;
+  font-weight:bold
+}
+
+.highlight .nn{
+  color:#555555
+}
+
+.highlight .nt{
+  color:#000080
+}
+
+.highlight .nv{
+  color:#008080
+}
+
+.highlight .ow{
+  font-weight:bold
+}
+
+.highlight .w{
+  color:#bbbbbb
+}
+
+.highlight .mf{
+  color:#009999
+}
+
+.highlight .mh{
+  color:#009999
+}
+
+.highlight .mi{
+  color:#009999
+}
+
+.highlight .mo{
+  color:#009999
+}
+
+.highlight .sb{
+  color:#d14
+}
+
+.highlight .sc{
+  color:#d14
+}
+
+.highlight .sd{
+  color:#d14
+}
+
+.highlight .s2{
+  color:#d14
+}
+
+.highlight .se{
+  color:#d14
+}
+
+.highlight .sh{
+  color:#d14
+}
+
+.highlight .si{
+  color:#d14
+}
+
+.highlight .sx{
+  color:#d14
+}
+
+.highlight .sr{
+  color:#009926
+}
+
+.highlight .s1{
+  color:#d14
+}
+
+.highlight .ss{
+  color:#990073
+}
+
+.highlight .bp{
+  color:#999999
+}
+
+.highlight .vc{
+  color:#008080
+}
+
+.highlight .vg{
+  color:#008080
+}
+
+.highlight .vi{
+  color:#008080
+}
+
+.highlight .il{
+  color:#009999
+}
+
+.highlight .gc{
+  color:#999;
+  background-color:#EAF2F5
+}
+
+.type-csharp .highlight .k{
+  color:#0000FF
+}
+
+.type-csharp .highlight .kt{
+  color:#0000FF
+}
+
+.type-csharp .highlight .nf{
+  color:#000000;
+  font-weight:normal
+}
+
+.type-csharp .highlight .nc{
+  color:#2B91AF
+}
+
+.type-csharp .highlight .nn{
+  color:#000000
+}
+
+.type-csharp .highlight .s{
+  color:#A31515
+}
+
+.type-csharp .highlight .sc{
+  color:#A31515
+}
+
+.file-content .source-view .line-numbers {
+  padding: 7px 0;
+  margin-left: -27px;
+  background-color: transparent;
+  border: none;
+}
+
+.file-content .source-view .line-numbers pre {
+  background-color: transparent;
+  font-size: 13px;
+  line-height: 18px;
+  border: none;
+  margin: 0;
+}
+
+.source-container pre {
+  background-color: transparent;
+}
+
+.source-container code {
+  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Repeat of above, but for .filebrowser-readme-content (used on for top-level README.md in Stash) */
+
+.filebrowser-readme-content
+{
+  font-size:15px;
+  line-height:1.7;
+  overflow-x:hidden;
+  
+    background-color: white;
+    border-radius: 3px;
+    border: 3px solid #EEE;
+    box-shadow: inset 0 0 0 1px #CECECE;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    width: 912px;
+    padding: 30px;
+    margin: 2em auto;
+    
+    color:#333333;
+}
+
+.filebrowser-readme-content>:first-child
+{
+  margin-top:0!important;
+}
+
+.filebrowser-readme-content>:last-child
+{
+  margin-bottom:0!important;
+}
+
+blockquote,dl,ol,p,pre,table,ul {
+  border: 0;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.filebrowser-readme-content a.absent
+{
+  color:#c00;
+}
+
+.filebrowser-readme-content a.anchor
+{
+  display:block;
+  padding-left:30px;
+  margin-left:-30px;
+  cursor:pointer;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0
+}
+
+/*h4,h5,h6{ font-weight: bold; }*/
+
+.octicon{
+  font:normal normal 16px sans-serif;
+  width: 1em;
+  height: 1em;
+  line-height:1;
+  display:inline-block;
+  text-decoration:none;
+  -webkit-font-smoothing:antialiased
+}
+
+.filebrowser-readme-content h1,.filebrowser-readme-content h2,.filebrowser-readme-content h3,.filebrowser-readme-content h4,.filebrowser-readme-content h5,.filebrowser-readme-content h6{
+  margin:1em 0 15px;
+  padding:0;
+  font-weight:bold;
+  line-height:1.7;
+  cursor:text;
+  position:relative
+}
+
+.filebrowser-readme-content h1 .octicon-link,.filebrowser-readme-content h2 .octicon-link,.filebrowser-readme-content h3 .octicon-link,.filebrowser-readme-content h4 .octicon-link,.filebrowser-readme-content h5 .octicon-link,.filebrowser-readme-content h6 .octicon-link{
+  display:none;
+  color:#000
+}
+
+.filebrowser-readme-content h1:hover a.anchor,.filebrowser-readme-content h2:hover a.anchor,.filebrowser-readme-content h3:hover a.anchor,.filebrowser-readme-content h4:hover a.anchor,.filebrowser-readme-content h5:hover a.anchor,.filebrowser-readme-content h6:hover a.anchor{
+  text-decoration:none;
+  line-height:1;
+  padding-left:0;
+  margin-left:-22px;
+  top:15%
+}
+
+.filebrowser-readme-content h1:hover a.anchor .octicon-link,.filebrowser-readme-content h2:hover a.anchor .octicon-link,.filebrowser-readme-content h3:hover a.anchor .octicon-link,.filebrowser-readme-content h4:hover a.anchor .octicon-link,.filebrowser-readme-content h5:hover a.anchor .octicon-link,.filebrowser-readme-content h6:hover a.anchor .octicon-link{
+  display:inline-block
+}
+
+.filebrowser-readme-content h1 tt,.filebrowser-readme-content h1 code,.filebrowser-readme-content h2 tt,.filebrowser-readme-content h2 code,.filebrowser-readme-content h3 tt,.filebrowser-readme-content h3 code,.filebrowser-readme-content h4 tt,.filebrowser-readme-content h4 code,.filebrowser-readme-content h5 tt,.filebrowser-readme-content h5 code,.filebrowser-readme-content h6 tt,.filebrowser-readme-content h6 code{
+  font-size:inherit
+}
+
+.filebrowser-readme-content h1{
+  font-size:2.5em;
+  border-bottom:1px solid #ddd
+}
+
+.filebrowser-readme-content h2{
+  font-size:2em;
+  border-bottom:1px solid #eee
+}
+
+.filebrowser-readme-content h3{
+  font-size:1.5em
+}
+
+.filebrowser-readme-content h4{
+  font-size:1.2em
+}
+
+.filebrowser-readme-content h5{
+  font-size:1em
+}
+
+.filebrowser-readme-content h6{
+  color:#777;
+  font-size:1em
+}
+
+.filebrowser-readme-content p,.filebrowser-readme-content blockquote,.filebrowser-readme-content ul,.filebrowser-readme-content ol,.filebrowser-readme-content dl,.filebrowser-readme-content table,.filebrowser-readme-content pre{
+  margin:15px 0
+}
+
+.filebrowser-readme-content h1 tt,.filebrowser-readme-content h1 code,.filebrowser-readme-content h2 tt,.filebrowser-readme-content h2 code,.filebrowser-readme-content h3 tt,.filebrowser-readme-content h3 code,.filebrowser-readme-content h4 tt,.filebrowser-readme-content h4 code,.filebrowser-readme-content h5 tt,.filebrowser-readme-content h5 code,.filebrowser-readme-content h6 tt,.filebrowser-readme-content h6 code
+{
+  font-size:inherit;
+}
+
+
+.filebrowser-readme-content hr
+{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC);
+  background-repeat: repeat-x;
+  /*background:transparent url(http://overblown.net/files/markdown/dirty-shade.png) repeat-x 0 0;*/
+  background-color: transparent;
+  background-position: 0;
+  border:0 none;
+  color:#ccc;
+  height:4px;
+  margin:15px 0;
+  padding:0;
+}
+
+.filebrowser-readme-content li p.first
+{
+  display:inline-block;
+}
+
+.filebrowser-readme-content ul,.filebrowser-readme-content ol
+{
+  padding-left:30px;
+}
+
+.filebrowser-readme-content ul.no-list,.filebrowser-readme-content ol.no-list
+{
+  list-style-type:none;
+  padding:0;
+}
+
+.filebrowser-readme-content ul ul,.filebrowser-readme-content ul ol,.filebrowser-readme-content ol ol,.filebrowser-readme-content ol ul
+{
+  margin-bottom:0;
+  margin-top:0;
+}
+
+.filebrowser-readme-content dl
+{
+  padding:0;
+}
+
+.filebrowser-readme-content dl dt
+{
+  font-size:14px;
+  font-style:italic;
+  font-weight:700;
+  margin-top:15px;
+  padding:0;
+}
+
+.filebrowser-readme-content dl dd
+{
+  margin-bottom:15px;
+  padding:0 15px;
+}
+
+.filebrowser-readme-content blockquote
+{
+  border-left:4px solid #DDD;
+  color:#777;
+  padding:0 15px;
+}
+
+.filebrowser-readme-content blockquote>:first-child
+{
+  margin-top:0;
+}
+
+.filebrowser-readme-content blockquote>:last-child
+{
+  margin-bottom:0;
+}
+
+.filebrowser-readme-content table
+{
+  display:block;
+  overflow:auto;
+  width:100%;
+}
+
+.filebrowser-readme-content table th
+{
+  font-weight:700;
+}
+
+.filebrowser-readme-content table th,.filebrowser-readme-content table td
+{
+  border:1px solid #ddd;
+  padding:6px 13px;
+}
+
+.filebrowser-readme-content table tr
+{
+  background-color:#fff;
+  border-top:1px solid #ccc;
+}
+
+.filebrowser-readme-content table tr:nth-child(2n)
+{
+  background-color:#f8f8f8;
+}
+
+.filebrowser-readme-content img
+{
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  max-width:100%;
+}
+
+.filebrowser-readme-content span.frame
+{
+  display:block;
+  overflow:hidden;
+}
+
+.filebrowser-readme-content span.frame>span
+{
+  border:1px solid #ddd;
+  display:block;
+  float:left;
+  margin:13px 0 0;
+  overflow:hidden;
+  padding:7px;
+  width:auto;
+}
+
+.filebrowser-readme-content span.frame span img
+{
+  display:block;
+  float:left;
+}
+
+.filebrowser-readme-content span.frame span span
+{
+  clear:both;
+  color:#333;
+  display:block;
+  padding:5px 0 0;
+}
+
+.filebrowser-readme-content span.align-center
+{
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+.filebrowser-readme-content span.align-center>span
+{
+  display:block;
+  margin:13px auto 0;
+  overflow:hidden;
+  text-align:center;
+}
+
+.filebrowser-readme-content span.align-center span img
+{
+  margin:0 auto;
+  text-align:center;
+}
+
+.filebrowser-readme-content span.align-right
+{
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+.filebrowser-readme-content span.align-right>span
+{
+  display:block;
+  margin:13px 0 0;
+  overflow:hidden;
+  text-align:right;
+}
+
+.filebrowser-readme-content span.align-right span img
+{
+  margin:0;
+  text-align:right;
+}
+
+.filebrowser-readme-content span.float-left
+{
+  display:block;
+  float:left;
+  margin-right:13px;
+  overflow:hidden;
+}
+
+.filebrowser-readme-content span.float-left span
+{
+  margin:13px 0 0;
+}
+
+.filebrowser-readme-content span.float-right
+{
+  display:block;
+  float:right;
+  margin-left:13px;
+  overflow:hidden;
+}
+
+.filebrowser-readme-content span.float-right>span
+{
+  display:block;
+  margin:13px auto 0;
+  overflow:hidden;
+  text-align:right;
+}
+
+.filebrowser-readme-content code,.filebrowser-readme-content tt
+{
+  background-color:#f8f8f8;
+  border:1px solid #ddd;
+  border-radius:3px;
+  margin:0 2px;
+  padding:0 5px;
+}
+
+.filebrowser-readme-content code
+{
+  white-space:nowrap;
+}
+
+
+code,pre{
+  font-family:Consolas, "Liberation Mono", Courier, monospace;
+  font-size:12px
+}
+
+.filebrowser-readme-content pre>code
+{
+  background:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+  white-space:pre;
+}
+
+/*
+.filebrowser-readme-content .highlight pre,.filebrowser-readme-content pre
+{
+  background-color:#f8f8f8;
+  border:1px solid #ddd;
+  font-size:13px;
+  line-height:19px;
+  overflow:auto;
+  padding:6px 10px;
+  border-radius:3px
+}
+*/
+
+.filebrowser-readme-content pre code,.filebrowser-readme-content pre tt
+{
+  background-color:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+.filebrowser-readme-content .task-list{
+  list-style-type:none;
+  padding-left:10px
+}
+
+/* Repeat of above, but for .rendered-markup (used on for top-level README.md in Stash) */
+
+.rendered-markup
+{
+  font-size:15px;
+  line-height:1.7;
+  overflow-x:hidden;
+  
+    background-color: white;
+    border-radius: 3px;
+    border: 3px solid #EEE;
+    box-shadow: inset 0 0 0 1px #CECECE;
+    font-family: Helvetica, arial, freesans, clean, sans-serif;
+    width: 912px;
+    padding: 30px;
+    margin: 2em auto;
+    
+    color:#333333;
+}
+
+.rendered-markup>:first-child
+{
+  margin-top:0!important;
+}
+
+.rendered-markup>:last-child
+{
+  margin-bottom:0!important;
+}
+
+blockquote,dl,ol,p,pre,table,ul {
+  border: 0;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.rendered-markup a.absent
+{
+  color:#c00;
+}
+
+.rendered-markup a.anchor
+{
+  display:block;
+  padding-left:30px;
+  margin-left:-30px;
+  cursor:pointer;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0
+}
+
+/*h4,h5,h6{ font-weight: bold; }*/
+
+.octicon{
+  font:normal normal 16px sans-serif;
+  width: 1em;
+  height: 1em;
+  line-height:1;
+  display:inline-block;
+  text-decoration:none;
+  -webkit-font-smoothing:antialiased
+}
+
+.rendered-markup h1,.rendered-markup h2,.rendered-markup h3,.rendered-markup h4,.rendered-markup h5,.rendered-markup h6{
+  margin:1em 0 15px;
+  padding:0;
+  font-weight:bold;
+  line-height:1.7;
+  cursor:text;
+  position:relative
+}
+
+.rendered-markup h1 .octicon-link,.rendered-markup h2 .octicon-link,.rendered-markup h3 .octicon-link,.rendered-markup h4 .octicon-link,.rendered-markup h5 .octicon-link,.rendered-markup h6 .octicon-link{
+  display:none;
+  color:#000
+}
+
+.rendered-markup h1:hover a.anchor,.rendered-markup h2:hover a.anchor,.rendered-markup h3:hover a.anchor,.rendered-markup h4:hover a.anchor,.rendered-markup h5:hover a.anchor,.rendered-markup h6:hover a.anchor{
+  text-decoration:none;
+  line-height:1;
+  padding-left:0;
+  margin-left:-22px;
+  top:15%
+}
+
+.rendered-markup h1:hover a.anchor .octicon-link,.rendered-markup h2:hover a.anchor .octicon-link,.rendered-markup h3:hover a.anchor .octicon-link,.rendered-markup h4:hover a.anchor .octicon-link,.rendered-markup h5:hover a.anchor .octicon-link,.rendered-markup h6:hover a.anchor .octicon-link{
+  display:inline-block
+}
+
+.rendered-markup h1 tt,.rendered-markup h1 code,.rendered-markup h2 tt,.rendered-markup h2 code,.rendered-markup h3 tt,.rendered-markup h3 code,.rendered-markup h4 tt,.rendered-markup h4 code,.rendered-markup h5 tt,.rendered-markup h5 code,.rendered-markup h6 tt,.rendered-markup h6 code{
+  font-size:inherit
+}
+
+.rendered-markup h1{
+  font-size:2.5em;
+  border-bottom:1px solid #ddd
+}
+
+.rendered-markup h2{
+  font-size:2em;
+  border-bottom:1px solid #eee
+}
+
+.rendered-markup h3{
+  font-size:1.5em
+}
+
+.rendered-markup h4{
+  font-size:1.2em
+}
+
+.rendered-markup h5{
+  font-size:1em
+}
+
+.rendered-markup h6{
+  color:#777;
+  font-size:1em
+}
+
+.rendered-markup p,.rendered-markup blockquote,.rendered-markup ul,.rendered-markup ol,.rendered-markup dl,.rendered-markup table,.rendered-markup pre{
+  margin:15px 0
+}
+
+.rendered-markup h1 tt,.rendered-markup h1 code,.rendered-markup h2 tt,.rendered-markup h2 code,.rendered-markup h3 tt,.rendered-markup h3 code,.rendered-markup h4 tt,.rendered-markup h4 code,.rendered-markup h5 tt,.rendered-markup h5 code,.rendered-markup h6 tt,.rendered-markup h6 code
+{
+  font-size:inherit;
+}
+
+
+.rendered-markup hr
+{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC);
+  background-repeat: repeat-x;
+  /*background:transparent url(http://overblown.net/files/markdown/dirty-shade.png) repeat-x 0 0;*/
+  background-color: transparent;
+  background-position: 0;
+  border:0 none;
+  color:#ccc;
+  height:4px;
+  margin:15px 0;
+  padding:0;
+}
+
+.rendered-markup li p.first
+{
+  display:inline-block;
+}
+
+.rendered-markup ul,.rendered-markup ol
+{
+  padding-left:30px;
+}
+
+.rendered-markup ul.no-list,.rendered-markup ol.no-list
+{
+  list-style-type:none;
+  padding:0;
+}
+
+.rendered-markup ul ul,.rendered-markup ul ol,.rendered-markup ol ol,.rendered-markup ol ul
+{
+  margin-bottom:0;
+  margin-top:0;
+}
+
+.rendered-markup dl
+{
+  padding:0;
+}
+
+.rendered-markup dl dt
+{
+  font-size:14px;
+  font-style:italic;
+  font-weight:700;
+  margin-top:15px;
+  padding:0;
+}
+
+.rendered-markup dl dd
+{
+  margin-bottom:15px;
+  padding:0 15px;
+}
+
+.rendered-markup blockquote
+{
+  border-left:4px solid #DDD;
+  color:#777;
+  padding:0 15px;
+}
+
+.rendered-markup blockquote>:first-child
+{
+  margin-top:0;
+}
+
+.rendered-markup blockquote>:last-child
+{
+  margin-bottom:0;
+}
+
+.rendered-markup table
+{
+  display:block;
+  overflow:auto;
+  width:100%;
+}
+
+.rendered-markup table th
+{
+  font-weight:700;
+}
+
+.rendered-markup table th,.rendered-markup table td
+{
+  border:1px solid #ddd;
+  padding:6px 13px;
+}
+
+.rendered-markup table tr
+{
+  background-color:#fff;
+  border-top:1px solid #ccc;
+}
+
+.rendered-markup table tr:nth-child(2n)
+{
+  background-color:#f8f8f8;
+}
+
+.rendered-markup img
+{
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  max-width:100%;
+}
+
+.rendered-markup span.frame
+{
+  display:block;
+  overflow:hidden;
+}
+
+.rendered-markup span.frame>span
+{
+  border:1px solid #ddd;
+  display:block;
+  float:left;
+  margin:13px 0 0;
+  overflow:hidden;
+  padding:7px;
+  width:auto;
+}
+
+.rendered-markup span.frame span img
+{
+  display:block;
+  float:left;
+}
+
+.rendered-markup span.frame span span
+{
+  clear:both;
+  color:#333;
+  display:block;
+  padding:5px 0 0;
+}
+
+.rendered-markup span.align-center
+{
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+.rendered-markup span.align-center>span
+{
+  display:block;
+  margin:13px auto 0;
+  overflow:hidden;
+  text-align:center;
+}
+
+.rendered-markup span.align-center span img
+{
+  margin:0 auto;
+  text-align:center;
+}
+
+.rendered-markup span.align-right
+{
+  clear:both;
+  display:block;
+  overflow:hidden;
+}
+
+.rendered-markup span.align-right>span
+{
+  display:block;
+  margin:13px 0 0;
+  overflow:hidden;
+  text-align:right;
+}
+
+.rendered-markup span.align-right span img
+{
+  margin:0;
+  text-align:right;
+}
+
+.rendered-markup span.float-left
+{
+  display:block;
+  float:left;
+  margin-right:13px;
+  overflow:hidden;
+}
+
+.rendered-markup span.float-left span
+{
+  margin:13px 0 0;
+}
+
+.rendered-markup span.float-right
+{
+  display:block;
+  float:right;
+  margin-left:13px;
+  overflow:hidden;
+}
+
+.rendered-markup span.float-right>span
+{
+  display:block;
+  margin:13px auto 0;
+  overflow:hidden;
+  text-align:right;
+}
+
+.aui-item.rendered-markup code,.aui-item.rendered-markup tt
+{
+  background-color:#f8f8f8;
+  border:1px solid #ddd;
+  border-radius:3px;
+  margin:0 2px;
+  padding:0 5px;
+}
+
+.rendered-markup code
+{
+  white-space:nowrap;
+}
+
+
+code,pre{
+  font-family:Consolas, "Liberation Mono", Courier, monospace;
+  font-size:12px
+}
+
+
+.rendered-markup pre>code
+{
+  background:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+  white-space:pre;
+}
+
+/*
+.rendered-markup .highlight pre,.rendered-markup pre
+{
+  background-color:#f8f8f8;
+  border:1px solid #ddd;
+  font-size:13px;
+  line-height:19px;
+  overflow:auto;
+  padding:6px 10px;
+  border-radius:3px
+}
+*/
+
+.rendered-markup pre code,.rendered-markup pre tt
+{
+  background-color:transparent;
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+.rendered-markup .task-list{
+  list-style-type:none;
+  padding-left:10px
+}

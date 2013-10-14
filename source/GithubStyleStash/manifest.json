@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Github Markdown Style for stash.resource.com",
+  "description": "This extension changes the display of markdown documents in Stash so that they match the Github visual style.",
+  "version": "0.1.0",
+  "icons" : {
+    "48" : "icon48.png",
+    "128" : "icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://stash.resource.com/*"],
+      "css": ["github.css"]
+    }
+  ]
+}
