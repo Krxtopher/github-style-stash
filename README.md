@@ -14,4 +14,4 @@ That's it! Any Markdown files you view at stash.resource.com will be automatical
 
 ## Bugs?
 
-This extension has only been lightly tested. If you find cases where it doesn't display some bit of Markdown as you would expect please open an issue!
+This extension has only been lightly tested. If you find cases where it doesn't display some bit of Markdown as you would expect please [open an issue](https://github.com/Krxtopher/github-style-stash/issues)!
