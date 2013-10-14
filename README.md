@@ -5,7 +5,7 @@ This Google Chrome extension adds cosmetic improvements to Markdown rendering in
 ## Installation
 
 1. Download the pre-build Chrome estension `distribution/GoogleStyleStash.crx`.
-2. In Google Chrome, select **Window > Extensions** to open the Extensions tab (or just <a href="chrome://extensions/">click this link</a>).
+2. In Google Chrome, select **Window > Extensions** to open the Extensions tab.
 3. Drag the `GoogleStyleStash.crx` extension into the Extensions tab area.
 
 That's it! Any Markdown files you view at stash.resource.com will be automatically styled to match Github's style.
