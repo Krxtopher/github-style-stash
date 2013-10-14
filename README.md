@@ -6,7 +6,7 @@ Also note that the extension does *not* enable Github-flavored Markdown syntax, 
 
 ## Installation
 
-1. Download the pre-build Chrome estension `distribution/GoogleStyleStash.crx`.
+1. Download the pre-built Chrome estension `distribution/GoogleStyleStash.crx`.
 2. In Google Chrome, select **Window > Extensions** to open the Extensions tab.
 3. Drag the `GoogleStyleStash.crx` extension into the Extensions tab area.
 
